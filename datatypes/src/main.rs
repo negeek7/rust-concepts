@@ -36,5 +36,9 @@ fn main() {
     let tup = ("harshiiet", 25);
     let (name, age) = tup;
 
-    println!("Th guy's name is {} and age is {}", name, age)
+    println!("Th guy's name is {} and age is {}", name, age);
+
+    // accessing value from tuple with dot notation
+    let age = tup.1;
+    println!("{}", age)
 }
