@@ -4,7 +4,8 @@
 // We also cannot any result of the function to a const variable but to let
 // const variables are to be type annotated
 
-
+// Shadowing varibles
+// Shadowing allows to create a new variable using the name of a existing variable
 fn main() {
     let mut x = 5;
     println!("{}", x);
@@ -15,4 +16,14 @@ fn main() {
     const AGE: u32 = 25;
 
     println!("{}", AGE);
+
+    // Shadowing
+    let class_count = 30;
+    println!("Total classes in a school {}", class_count);
+    
+    // class_count has shadowed the before class count variable
+    // this also preserves the immutability of variables
+    let class_count: &str = "thirty";
+    println!("Total classes in a school {}", class_count);
+
 }
