@@ -33,6 +33,8 @@ fn main() {
 
 
     // Compound data types
+
+    // Tuples
     let tup = ("harshiiet", 25);
     let (name, age) = tup;
 
@@ -40,5 +42,16 @@ fn main() {
 
     // accessing value from tuple with dot notation
     let age = tup.1;
-    println!("{}", age)
+    println!("{}", age);
+
+    // Arrays
+    let error_codes = [200, 404, 502];
+
+    // access values with their index value
+    let not_found = error_codes[1];
+    println!("Error {}", not_found);
+
+
+    let arr = [0; 8]; // another way of making an array (this says create 8 items with value 0) 
+    println!("{}", arr[2]);
 }
