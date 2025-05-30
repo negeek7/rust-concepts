@@ -11,23 +11,30 @@ fn main() {
     // let x: i32 = 0b1111_0000; // Binary
     // let c: u8 = b'A'; // Byte
 
-    // println!("{}", c);
-    // // floating-point numbers
+    // // println!("{}", c);
+    // // // floating-point numbers
     // let f: f64 = 2.0;
     // let g: f32 = 3.0;
+    // let sum: f64 = 11.2 + 54.2;
+    // let sub: f64 = 54.00 - 10.00;
+    // let product: f64 = 2.10 * 1.1;
+    // let quotient: f64 = 2.10 / 1.1;
+    // let remainder: f64 = 43 % 5;
+    // println!("{}", product);
 
-    //addition
-    let sum: f64 = 11.2 + 54.2;
-    let sub: f64 = 54.00 - 10.00;
-    println!("{}", sub)
-    // booleans
+    // // booleans
+    // let sahi: bool = true;
+    // let galat: bool = false;
 
-    // character
+    // // character
+    // let char = "Z";
+
+
+
+
+    // Compound data types
+    let tup = ("harshiiet", 25);
+    let (name, age) = tup;
+
+    println!("Th guy's name is {} and age is {}", name, age)
 }
-
-
-
-// Compound data types
-// fn main() {
-//     println!("Hello, world!");
-// }
