@@ -54,4 +54,12 @@ fn main() {
 
     let arr = [0; 8]; // another way of making an array (this says create 8 items with value 0) 
     println!("{}", arr[2]);
+
+    my_function("Harshiiet", 27);
+
+}
+
+
+fn my_function(name: &str, age: u32) {
+    println!("The name is {} and age is {}", name, age)
 }
