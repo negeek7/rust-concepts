@@ -1,6 +1,8 @@
 fn main() {
-    let result = loop_up();
-    println!("Final number is {}", result);
+    // let result = loop_up();
+    // println!("Final number is {}", result);
+
+    for_loop();
 }
 
 fn my_function(num1: i32, num2: i32) -> i32 {
@@ -20,4 +22,13 @@ fn loop_up() -> i32 {
     };
 
     result
+}
+
+
+fn for_loop() {
+    let a = [100, 200, 300, 400, 500];
+
+    for digit in a.iter() {
+        println!("{}", digit);
+    }
 }
