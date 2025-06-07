@@ -12,8 +12,16 @@ fn main() {
         // println!("{}", str);
 
 
-        let s1 = String::from("hello");
-        let s2 = s1; // Move (not shallow copy, meaning s1/s1's value has been MOVED to s2)
+        // let s1 = String::from("hello");
+        // let s2 = s1; // Move (not shallow copy, meaning s1/s1's value has been MOVED to s2)
 
-        println!("{}, world!", s1);
+        // println!("{}, world!", s1);
+        let str = String::from("hello");
+        another_function(str);
+        println!("{}", str);
     }
+
+
+fn another_function(some_str: String) -> String {
+    println!("{}", some_str);
+}
