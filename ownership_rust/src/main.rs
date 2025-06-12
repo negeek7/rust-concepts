@@ -20,11 +20,24 @@ fn main() {
         // another_function(str);
         // println!("{}", str);
         
-        let x = 123;
-        takes_integer(x);
-        println!("{}", x);
+        // let x = 123;
+        // takes_integer(x);
+        // println!("{}", x);
+
+        // let name: String = String::from("Harshiiet");
+        // print_name(&name);
+        // println!("{}", name);
+
+        let mut name = String::from("negi");
+        // let name_copy = &name;
+        // println!("Name Copy -> {}", name_copy)
+        print_name(&name); // prints the reference of name variable
+        println!("{}", name);
     }
 
+    fn print_name(value: &String) {
+        println!("{}", value);
+    }
 
 // fn another_function(some_str: String) -> String {
 //     println!("{}", some_str);
